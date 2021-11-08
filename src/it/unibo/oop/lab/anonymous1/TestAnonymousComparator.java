@@ -80,7 +80,7 @@ public final class TestAnonymousComparator {
       
         Collections.sort(denzelUsers, new Comparator<User> () {
         	public int compare(User a, User b) {
-        		return a.getAge() - b.getAge();
+        		return Integer.compare(a.getAge(), b.getAge());
         	}
         });
         /*
@@ -115,7 +115,7 @@ public final class TestAnonymousComparator {
          */
         Collections.sort(rossiUsers, new Comparator<User> () {
         	public int compare(User a, User b) {
-        		return b.getAge() - a.getAge();
+        		return Integer.compare( b.getAge(), a.getAge());
         	}
         });
         /*

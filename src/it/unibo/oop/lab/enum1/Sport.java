@@ -14,4 +14,22 @@ public enum Sport {
      * declare the following sports: - basket - soccer - tennis - bike - F1 -
      * motogp - volley
      */
+	
+	BASKET("Basket"),
+	SOCCER("Soccer"),
+	TENNIS("Tennis"),
+	BIKE("Bike"),
+	F1("F1"),
+	MOTOGP("MotoGP"),
+	VOLLEY("Volley");
+	
+	private final String name;
+	
+	private Sport(String name) {
+		this.name = name;
+	}
+	
+	public String toString() {
+		return this.name;
+	}
 }

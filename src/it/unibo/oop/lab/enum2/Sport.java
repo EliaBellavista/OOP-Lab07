@@ -16,7 +16,7 @@ package it.unibo.oop.lab.enum2;
  * 
  */
 public enum Sport {
-
+	
     /*
      * TODO
      * 
@@ -37,6 +37,7 @@ public enum Sport {
      * - soccer
      * 
      */
+	SOCCER(Place.OUTDOOR, 11, "soccer");
 
     /*
      * TODO
@@ -45,6 +46,9 @@ public enum Sport {
      * 
      * Declare required fields
      */
+	final Place place;
+	final int noTeamMembers;
+	final String actualName;
 
     /*
      * TODO
@@ -55,7 +59,11 @@ public enum Sport {
      * 
      * - Sport(final Place place, final int noTeamMembers, final String actualName)
      */
-
+	private Sport(final Place place, final int noTeamMembers, final String actualName) {
+		this.actualName = actualName;
+		this.noTeamMembers = noTeamMembers;
+		this.place = place;
+	}
     /*
      * TODO
      * 
